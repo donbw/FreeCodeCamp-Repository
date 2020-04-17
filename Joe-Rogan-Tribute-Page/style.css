@@ -1,0 +1,38 @@
+h1 {
+  color: #1f2833;
+  font-family: tranjan;
+  font-size: 80px;
+}
+h2 {
+  color: #557a95;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+h3 {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #557a95;
+}
+
+body {
+  text-align: center;
+  background-color: #b1a296;
+  margin: 20px 125px 75px 125px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #5d5c61;
+  text-align: left;
+}
+
+a:link {
+  color: #557a95;
+}
+a:visited {
+  color: #7395ae;
+}
+a:hover {
+  color: #64485c;
+}
