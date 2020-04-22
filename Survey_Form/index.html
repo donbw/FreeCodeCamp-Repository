@@ -1,88 +1,119 @@
 <!DOCTYPE html>
-
-<style>
-body {
-  font-family: sans-serif;
-  padding-left: 20%;
-  padding-right: 20%;
-  }
-label {
-  font-size: 18px;
-  display: block;
-  padding: 10px;
-}
-input {
-  display: block;
-}
-form {
-  background-color: hsl(160, 72%, 68%);
-  box-shadow: 0 10px 20px rgba(0,0,0,0,19), 1 6px 6px rgba(0,0,0,0,23);
-}
-input.checkbox {
-  display: inline-block;
-}
-
-</style>
-
 <html lang="eng">
-  <body>
-    <h1 id="title">
-      World Cuisine Survey Form
-    </h1>
-   
-    <p id="description">
-    If you had a choice of one type of cuisine for the rest of your life.  <br>
-    What culture's cuisine would you choose? 
-    </p>
-    <form id="survey-form">
-      <label id=name-label>Name</label>
-      <input type="text" name="name" id="name" required placeholder="Enter your Name"><br>
-      <label id="email-label">Email</label>
-      <input type="email" name="email" id="email" required placeholder="Enter your Email"><br>
-      <label id="number-label">Age</label>
-      <input type="number" name="age" id="number" min="10" max="150" required placeholder="Age"><br>
-      <hr>
-      <select id="dropdown" name="Countries">
-        <option value="African">African</option>
-        <option value="American">American</option>
-        <option value="Australian">Australian</option>
-        <option value="Brazilian">Brazilian</option>
-        <option value="Chinese">Chinese</option>
-        <option value="French">French</option>
-        <option value="German">German</option>
-        <option value="India">India</option>
-        <option value="Italian">Italian</option>
-        <option value="Japanese">Japanese</option>
-        <option value="Korean">Korean</option>
-        <option value="Mexican">Mexican</option>
-        <option value="Russian">Russian</option>
-        <option value="Spanish">Spanish</option>
-        <option value="Thai">Thai</option>
-        <option value="Other">Other</option>
-      </select>
 
-      <br>
+  <head>
+    <title>freecodecamp-survey-form-project</title>
+    <style
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </style>
+  </head>
+    <body>
+      
+      <header>
+        <meta charset="utf-8"/>
+        <h1 id="title">
+          World Cuisine Survey Form
+        </h1>
+      </header>
     
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br>
-      <input type="radio" id="other" name="gender" value="other">
-      <label for="other">Other</label>
+      <p id="description">
+      If you had a choice of one type of cuisine for the rest of  your life.  <br>
+      What culture's cuisine would you choose? 
+      </p>
+      <form id="survey-form">
+        <label 
+        id=name-label>Name
+      </label>
+        <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Enter your Name">
+        <br>
+        <label 
+        id="email-label" required>Email
+      </label>
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Enter your Email">
+        <br>
+        <label 
+        id="number-label" required>Age
+      </label>
+        <input 
+        type="number" 
+        name="age" 
+        id="number" 
+        min="10"  
+        max="150" 
+        placeholder="Age" 
+        required>
+        <br>
+        <hr>
+        <select id="dropdown" name="Countries">
+          <option value="African">African</option>
+          <option value="American">American</option>
+          <option value="Australian">Australian</option>
+          <option value="Brazilian">Brazilian</option>
+          <option value="Chinese">Chinese</option>
+          <option value="French">French</option>
+          <option value="German">German</option>
+          <option value="India">India</option>
+          <option value="Italian">Italian</option>
+          <option value="Japanese">Japanese</option>
+          <option value="Korean">Korean</option>
+          <option value="Mexican">Mexican</option>
+          <option value="Russian">Russian</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Thai">Thai</option>
+          <option value="Other">Other</option>
+        </select>
 
-      <hr>
+        <br>
+      
+        <input 
+          type="radio" 
+          id="male" 
+          name="gender" 
+          value="male">
+
+        <label 
+          for="male">Male
+        </label>
+        <br>
+        <input 
+          type="radio" 
+          id="female" 
+          name="gender" 
+          value="female">
+        <label 
+          for="female">Female
+        </label>
       <br>
+        <input 
+          type="radio" 
+          id="other" 
+          name="gender"  
+          value="other">
+        <label 
+          for="other">Other
+        </label>
 
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-      <label for="vehicle1"> I have a bike</label><br>
-      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-      <label for="vehicle2"> I have a car</label><br>
-      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-      <label for="vehicle3"> I have a boat</label><br>
+        <hr>
+        <br>
 
-      <textarea placeholder="Additional Comments"></textarea> 
-      <input type="submit" id="submit">
-    </form>
-    <script type="java/script" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+        <input type="checkbox" id="vehicle1" name="vehicle1"  value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2"  value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3"  value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+
+        <textarea placeholder="Additional Comments"></textarea> 
+        <input type="submit" id="submit">
+      </form>
+      <script type="java/script" src="https://cdn.freecodecamp. org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
 </html>
